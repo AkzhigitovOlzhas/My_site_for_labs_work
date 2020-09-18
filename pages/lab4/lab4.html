@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bgc.css">
+    <style>
+        input {
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Работа с формами HTML5</legend>
+
+        <form action="#">
+            <label for="color">Выберите цвет: </label><input id="color" name='color' type='color'>
+            <br>
+            <label for="num">Введите число: </label><input id="num" name='number' type='number' value='10' />
+            <br>
+            <label for="num1">Введите число: </label><input id="num1" name='range' type='range' min='1' max='5' />
+            <br>
+            <label for="file">Введите число: </label><input type='text' autofocus>
+            <br>
+            <label for="file">Выберите файл: </label><input id="file" type='file' multiple='multiple'>
+            <br>
+            <label for="color">Выберите дату:  </label><input type='date'>
+            <br>
+            <label for="color">Выберите время:  </label><input type='time'>
+            <br>
+            <label for="color">Выберите глобальное время и дату: </label><input type='datetime'>
+            <br>
+            <label for="color">Выберите местное время и дату:  </label><input type='datetime-local'>
+            <br>
+            <label for="color">Выберите месяц: </label><input type='month' />
+            <br>
+            <label for="color">Выберите неделю: </label><input type='week'>
+            <br></form>
+
+        <form action='html5.php'>
+            <label for="color">Введите email: </label><input name='email' type='email'>
+            <input type='submit' value='Отправить'>
+        </form>
+        <br>
+        <form action='html5.php'>
+            <label for="color">Введите url: </label><input name='url' type='url'>
+            <input type='submit' value='Отправить'>
+        </form>
+
+        <form action='html5.php' id='form1'>
+            <input name='first' type='text' value='10'>X
+            <input name='second' type='text' value='10'> =
+            <output name='result' for='first second'>100</output><br>
+            <input type='button' value='Посчитать' onclick='result.value=first.value*second.value'>
+        </form>
+
+    </fieldset>
+    <fieldset>
+        <legend>Форма 2</legend>
+        <input type="text" name="form2" id="1" placeholder="input text">
+        <br>
+        <input type="text" placeholder="text-box focused" autofocus>
+        <br>
+        <input type="checkbox" id="check1"><label for="check1">Lorem</label>
+        <br>
+        <input type="checkbox" id="check2"><label for="check2">Ipsum</label>
+        <br><br>
+        <input type="radio" name="" id="radio1"><label for="radio1">Lorem</label>
+        <br>
+        <input type="radio" name="" id="radio2"><label for="radio2">Ipsum</label>
+        <br><br>
+        <select name="" id="">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+    </select>
+        <br> <br><input type="submit" value="Submit">
+    </fieldset>
+
+
+</body>
+
+</html>
